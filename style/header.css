@@ -1,0 +1,72 @@
+header {
+    top: 0;
+    position: sticky;
+    min-width: var(--min-width);
+    height: var(--header-height);
+    background-color: black;
+    z-index: 2;
+}
+div.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin: auto 10%;
+}
+.head-element {
+    align-self: center;
+}
+
+.gen-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: fit-content;
+    max-width: max-content;
+}
+.info-element {
+    align-self: center;
+    padding: 0 16px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+.info-elem-logo {
+    align-self: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: solid white 3px;
+}
+.info-elem-name {
+    align-self: center;
+    font-size: 150%;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100%;
+    width: fit-content;
+    max-width: max-content;
+}
+.nav-element {
+    text-decoration: none;
+    align-self: center;
+    padding: 0 16px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+.nav-element:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.nav-elem-text {
+    align-self: center;
+    font-size: 150%;
+    color: white;
+}
