@@ -3,25 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Лучший в мире стример</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/fonts.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/general.css">
-    <meta name="keywords" content="генерал, хс, general, hs, general_hs, стример, лысый">
-    <meta name="description" content="Это не шутка!">
+
+    <link rel="stylesheet" href="./css/lightgallery.css">
+
+    <title>Виктор Конокрад, фотограф, Санкт-Петербург</title>
+    <meta name="keywords" content="фотограф, фотография, photo, Виктор, Конокрад, Санкт-Петербург, ламповый">
+    <meta name="description" content="Заходите на чай с полароидом!">
 </head>
 
 <body>
+
     <div class="page">
         <header>
-            <div class="header">
-                <div class="head-element gen-info">
-                    <div class="info-element">
-                        <img src="./source/logo.jpg" class="info-elem-logo" alt="logo">
+            <div class="header-wrapper">
+                <div class="head-element logo-info">
+                    <div class="info-element" id="logo">
+                        <img src="./src/logo.jpg" class="info-elem-logo" alt="logo">
                     </div>
-                    <div class="info-element">
-                        <div class="info-elem-name">General_HS_</div>
+                    <div class="info-element" id="name">
+                        <div class="info-elem-name">Виктор Конокрад</div>
                     </div>
                 </div>
                 <div class="head-element navigation">
@@ -29,7 +33,7 @@
                         <div class="nav-elem-text">Контакты</div>
                     </a>
                     <a href="merch.html" class="nav-element">
-                        <div class="nav-elem-text">Мерч</div>
+                        <div class="nav-elem-text">Услуги</div>
                     </a>
                     <a href="main.html" class="nav-element">
                         <div class="nav-elem-text">Главная</div>
@@ -37,42 +41,69 @@
                 </div>
             </div>
         </header>
+
         <div class="welcome">
-            <img src="./source/sett.jpg" alt="welcome" class="welcome-img">
+                <img src="./src/welcome.jpg" alt="welcome" class="welcome-img">
         </div>
+
         <main>
-            
-            <div class="section introduction">
-                <h1>
-                    Вас приветствует лысейший из лысейших!
-                </h1>
+
+            <div class="main-wrapper">
+
+                <div class="section introduction">
+                    <h1>
+                        Вся жизнь - в моментах
+                    </h1>
+                </div>
+
+                <div class="section about">
+                    <h4>Вкратце</h4>
+                    <div class="content">
+                        Меня зовут Виктор Конокрад, я профессиональный фотограф.
+                        Не зовите меня на праздники - лучше на чашечку чая, ведь я люблю выжимать из повседневности максимум жизни.
+                    </div>
+                </div>
+
+                <div class="section gallery">
+                    <ul class="photo-grid">
+                        <li><img src="src/photo_grid/gr1.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr2.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr3.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr4.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr5.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr6.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr7.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr8.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr9.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr10.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr11.jpg" alt="gr1" class="photo-grid-item"></li>
+                        <li><img src="src/photo_grid/gr12.jpg" alt="gr1" class="photo-grid-item"></li>
+                    </ul>
+                </div>
+
+                <div class="section gallery">
+                    <div id="lightgallery">
+                        <a href="./src/gallery/gr1.jpg">
+                            <img src="./src/gallery/nthumb1.jpg">
+                        </a>
+                        <a href="./src/gallery/gr2.jpg">
+                            <img src="./src/gallery/nthumb2.jpg">
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="page-content">
-                <div class="main-content">
-                    <div class="section gallery">
-                        <h4>История</h4>
-                        <div class="content">
-                            Если ты первый раз слышишь обо мне, то вкратце обо мне: 
-                            я Гена, aka General_HS_. Я занимаюсь стримингом уже более четырёх лет. 
-                            Бывший проф.игрок в Hearthstone, в настоящее время играю в 
-                            League of Legends и множество синглплеерных игры.
-                        </div>
-                    </div>
-                </div>
-                <div class="aside-content">
-                    <div class="section gallery">
-                        <h4>Галлерея:</h4>
-                        <div class="content">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     
         
         <footer>
         </footer>
     </div>
+    
+    <script src="./lightgallery/lightgallery.js"></script>
+    <script>
+        lightGallery(document.getElementById("lightgallery"));
+    </script>
 </body>
 </html>
