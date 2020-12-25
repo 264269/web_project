@@ -34,13 +34,14 @@ div.header-wrapper {
     margin: 0;
     height: 100%;
     display: flex;
+    flex-direction: row;
 }
 .info-elem-logo {
     align-self: center;
     height: 64px;
     width: 64px;
     border-radius: 50%;
-    border: solid #F9F9F9 3px;
+    border: solid #F9F9F9 2px;
 }
 .info-elem-name {
     align-self: center;
@@ -72,4 +73,17 @@ div.header-wrapper {
     align-self: center;
     font-size: 150%;
     color: #F9F9F9;
+}
+
+div.welcome {
+    height: 0;
+    margin-bottom: 30vmax;
+}
+img.welcome-img {
+    position: relative;
+    bottom: 10vmax;
+    z-index: 0;
+
+    min-height: calc(2.5 * var(--header-height));
+    width: 100%;
 }

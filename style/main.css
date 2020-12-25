@@ -1,57 +1,28 @@
-div.welcome {
-    height: 0;
-}
-img.welcome-img {
-    position: relative;
-    bottom: 10vmax;
-    z-index: 0;
-
-    min-height: calc(2.5 * var(--header-height));
-    width: 100%;
-    align-content: center;
-}
-
-main {
-    margin-top: 30vmax;
-
-    min-height: 600px;
-
-    position: relative;
-    z-index: 1;
-    
-    color: #F9F9F9;
-    background-color:#2a2c2f;
-    border-top: solid #F9F9F9 1px;
-}
 .main-wrapper {
-    width: 85%;
+    width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
+    margin: auto;
     text-align: center;
+
     font-size: 600%;
     font-style: italic;
     font-weight: 900;
-    margin: auto;
-    width: 80%;
-    /* border-top: solid  #F9F9F9 1px; */
 }
 h4 {
-    margin: 0 0 10px 5%;
+    margin: 0;
     font-size: 400%;
+    width: max-content;
 }
 
 div.section {
     padding: 48px 0;
 }
-
-div.section.about {
-    width: 35%;
-}
-div.section.about div.content {
+div.content-text {
     line-height: 163%;
 }
 
@@ -73,12 +44,79 @@ img.photo-grid-item {
     height: auto;
 }
 
-/* .page-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-/* .aside-content {
+h4.about {
+    margin: 0 auto 10px 5%;
+}
+img.poster {
+    margin-left: 24px;
+    float: right;
+    border: solid  #F9F9F9 2px;
     width: 35%;
-} */
+    height: auto;
+}
+div.about.content-text {
+    text-indent: 10%;
+}
+
+div.undercover {
+    width: 50%;
+    border-top: solid #F9F9F9 1px;
+    margin: 20px auto 0;
+}
+div.undercover-text {
+    width: max-content;
+    margin: auto;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h4.portrait {
+    margin: 0 5% 10px auto;
+}
+img.portrait {
+    float: left;
+    border: solid  #F9F9F9 2px;
+    margin-right: 24px;
+    width: 35%;
+    height: auto;
+}
+div.portrait.content-text {
+    text-indent: 10%;
+}
+
+button.fixed {
+    position: fixed;
+    z-index: 99;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: #F9F9F9;
+    font-weight: 600;
+
+    border: solid #F9F9F9 2px;
+    border-radius: 0;
+
+    margin: 0;
+    padding: 8px;
+
+    background-color: #2a2c2f;
+    width: max-content;
+    height: max-content;
+
+    outline: none;
+	cursor: pointer;
+}
+button.fixed:hover {
+    background-color: gray;
+}
+button#sticker {
+    bottom: 24px;
+    right: 24px;
+}
+button#go-top {
+    display: none;
+
+    top: calc(24px + var(--header-height));
+    right: 24px; 
+}

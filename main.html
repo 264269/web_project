@@ -56,14 +56,6 @@
                     </h1>
                 </div>
 
-                <div class="section about">
-                    <h4>Вкратце</h4>
-                    <div class="content">
-                        Меня зовут Виктор Конокрад, я профессиональный фотограф.
-                        Не зовите меня на праздники - лучше на чашечку чая, ведь я люблю выжимать из повседневности максимум жизни.
-                    </div>
-                </div>
-
                 <div class="section gallery">
                     <ul class="photo-grid">
                         <li><img src="src/photo_grid/gr1.jpg" alt="gr1" class="photo-grid-item"></li>
@@ -81,7 +73,43 @@
                     </ul>
                 </div>
 
-                <div class="section gallery">
+                <div class="section about">
+                    <h4 class="about">Главное</h4>
+                    <img src="./src/fill/poster.jpg" alt="poster" class="poster">
+                    <div class="content-text about">
+                        Привет! Меня зовут Виктор Конокрад, я доморощенный фотограф.
+                        Я уже много лет занимаюсь фотографией, и, можно сказать, буквально живу этим.
+                        В основном я предпочитаю, так скажем, "живую" съёмку - когда никто никому не позирует,
+                        и никто не ищет лучших ракурсов. Люблю жизнь, люблю моменты. Люблю природу, резвую, резкую и своевольную.
+                        Моя основная деятельность как фотографа не связана с заказными фотосессиями или съёмкой праздников: я предпочитаю
+                        делать тёплый, домашний, душевный контент. Например, мои фотографии отлично будут смотрется в рамке на стене вашей комнаты.
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="undercover">
+                        <div class="undercover-text">
+                            Счастье - в спокойствии
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section portrait">
+                    <h4 class="portrait">Фотосессии</h4>
+                    <img src="./src/fill/portrait.jpg" alt="portrait" class="portrait">
+                    <div class="content-text portrait">
+                        Несмотря на всё сказанное выше, у меня всё же можно заказать фотосессию. Правда, учтите - я не смогу делать именно так, как Вы попросите;
+                        все кадры будут такими, как поведёт меня рука, сердце и душа. Но я обещаю - Вы получите то, что окажется Вам действительно по душе. Вдобавок ко всему,
+                        Вы приобретёте новое приятное знакомство!
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="undercover">
+                        <div class="undercover-text">
+                            Красота - в чистоте сердца
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="section gallery">
                     <div id="lightgallery">
                         <a href="./src/gallery/gr1.jpg">
                             <img src="./src/gallery/nthumb1.jpg">
@@ -90,16 +118,62 @@
                             <img src="./src/gallery/nthumb2.jpg">
                         </a>
                     </div>
-                </div>
+                </div> -->
+
+                <!-- <div class="section">
+
+                </div> -->
 
             </div>
 
         </main>
     
         
+        <div id="">
+
+        </div>
+        <button onclick="" id="sticker" class="fixed">Жамкни меня!</button>
+        <script>
+            let modal = document.getElementById("form");
+            let showButton = document.getElementById("sticker");
+            let closeButton = document.getElementById("from-close");
+        
+            showButton.onclick = function() {
+                if ((modal.style.display == "") || (modal.style.display == "none")) {
+                    modal.style.display = "block";
+                } else {
+                    modal.style.display = "none";
+                }
+            };
+            closeButton.onclick = function() {
+                modal.style.display = "none";
+            };
+        </script>
+
+        <button onclick="topFunction()" id="go-top" class="fixed">Наверх!</button>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.documentElement.scrollTop > 200) {
+                    document.getElementById("go-top").style.display = "block";
+                } else {
+                    document.getElementById("go-top").style.display = "none";
+                }
+            }
+            
+            function topFunction() {
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
         <footer>
+            <div class="footer-wrapper">
+                Жопа
+            </div>
         </footer>
     </div>
+
     
     <script src="./lightgallery/lightgallery.js"></script>
     <script>

@@ -22,4 +22,12 @@ div.page {
     margin: auto;
 }
 
+main {
+    position: relative;
+    z-index: 1;
+    
+    color: #F9F9F9;
+    background-color:#2a2c2f;
+    border-top: solid #F9F9F9 1px;
+}
 
