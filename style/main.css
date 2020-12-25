@@ -38,10 +38,17 @@ ul.photo-grid {
     margin: auto;
     padding: 0;
 }
+
+img.photo-grid-item:hover {
+    transform: scale(1.5);
+}
+
 img.photo-grid-item {
     width: 15vw;
     min-width: 128px;
     height: auto;
+
+    transition: 1s;
 }
 
 h4.about {
