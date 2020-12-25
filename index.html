@@ -3,15 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/fonts.css">
-    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/index-comments.css">
-    <link rel="stylesheet" href="./style/index-about.css">
-    <link rel="stylesheet" href="./style/index-gallery.css">
-
-    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./style/wrapped.css">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/footer.css">
 
     <title>Виктор Конокрад, фотограф, Санкт-Петербург</title>
     <meta name="keywords" content="фотограф, фотография, photo, Виктор, Конокрад, Санкт-Петербург, ламповый">
@@ -77,34 +75,43 @@
                 </div>
 
                 <div class="section about">
-                    <h4 class="about">Главное</h4>
-                    <img src="./src/fill/poster.jpg" alt="poster" class="poster">
-                    <div class="content-text about">
-                        Привет! Меня зовут Виктор Конокрад, я доморощенный фотограф.
-                        Я уже много лет занимаюсь фотографией, и, можно сказать, буквально живу этим.
-                        В основном я предпочитаю, так скажем, "живую" съёмку - когда никто никому не позирует,
-                        и никто не ищет лучших ракурсов. Люблю жизнь, люблю моменты. Люблю природу, резвую, резкую и своевольную.
-                        Моя основная деятельность как фотографа не связана с заказными фотосессиями или съёмкой праздников: я предпочитаю
-                        делать тёплый, домашний, душевный контент. Например, мои фотографии отлично будут смотрется в рамке на стене вашей комнаты.
+                    <h4 class="header about">Главное</h4>
+                    <div class="section-content about">
+                        <img src="./src/fill/poster.jpg" alt="poster" class="poster content-item">
+                        <div class="not-img content-item">
+                            <div class="content-text not-img-item">
+                                Привет! Меня зовут Виктор Конокрад, я доморощенный фотограф.
+                                Я уже много лет занимаюсь фотографией, и, можно сказать, буквально живу этим.
+                                В основном я предпочитаю, так скажем, "живую" съёмку - когда никто никому не позирует,
+                                и никто не ищет лучших ракурсов. Люблю жизнь, люблю моменты. Люблю природу, резвую, резкую и своевольную.
+                                Моя основная деятельность как фотографа не связана с заказными фотосессиями или съёмкой праздников: я предпочитаю
+                                делать тёплый, домашний, душевный контент. Например, мои фотографии отлично будут смотреться в рамке на стене вашей комнаты.
+                            </div>
+                            <a href="./merch.html" class="not-img-item wrapped">Хочу картину!</a>
+                        </div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="undercover">
+
+                    <div class="undercover about">
                         <div class="undercover-text">
                             Счастье - в спокойствии
                         </div>
                     </div>
+
                 </div>
 
                 <div class="section portrait">
-                    <h4 class="portrait">Фотосессии</h4>
-                    <img src="./src/fill/portrait.jpg" alt="portrait" class="portrait">
-                    <div class="content-text portrait">
-                        Несмотря на всё сказанное выше, у меня всё же можно заказать фотосессию. Правда, учтите - я не смогу делать именно так, как Вы попросите;
-                        все кадры будут такими, как поведёт меня рука, сердце и душа. Но я обещаю - Вы получите то, что окажется Вам действительно по душе. Вдобавок ко всему,
-                        Вы приобретёте новое приятное знакомство!
-
+                    <h4 class="header portrait">Фотосессии</h4>
+                    <div class="section-content portrait">
+                        <img src="./src/fill/portrait.jpg" alt="portrait" class="portrait content-item">
+                        <div class="not-img content-item">
+                            <div class="content-text not-img-item">
+                                Несмотря на всё сказанное выше, у меня всё же можно заказать фотосессию. Правда, учтите - я не смогу делать именно так, как Вы попросите;
+                                все кадры будут такими, как поведёт меня рука, сердце и душа. Но я обещаю - Вы получите то, что окажется Вам действительно по душе. Вдобавок ко всему,
+                                Вы приобретёте новое приятное знакомство!
+                            </div>
+                            <a href="./merch.html" class="not-img-item wrapped">Хочу фотосессию!</a>
+                        </div>
                     </div>
-                    <div class="clearfix"></div>
                     <div class="undercover">
                         <div class="undercover-text">
                             Красота - в чистоте сердца
@@ -112,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="section promo">
+                <!-- <div class="section promo">
                     <h4 class="about">Акция</h4>
                     <div class="promo-flex">
                         <div class="promo-item">
@@ -172,53 +179,96 @@
                             Копейка рубль берёжёт
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="section comments">
-                    <h4 class="comments">Отзывы</h4>
-                    <div class="flex-comments">
-                        <div class="comment-elem">
-                            <div class="comment-info">
-                                <img src="./src/commentators/0.jpg" alt="logo0" class="commentator-logo">
-                                <div class="commentator-name">Антон Бобруев</div>
+                    <h4 class="header comments">Отзывы</h4>
+                    <div class="section-content comments">
+                        <div class="commentators">
+                            <div class="img-wrapping">
+                                <img src="./src/commentators/0.jpg" onclick="choseComment(this)" id="com0" alt="logo0" class="commentator-logo chosen-commentator">
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="comment-text">
-                                Восхитительный художник! Безупречный гранат! Изумительный арбуз! Водородный шлакобряк!
-                             </div>
-                        </div>
-                        <div class="comment-elem">
-                            <div class="comment-info">
-                                <img src="./src/commentators/4.jpg" alt="logo4" class="commentator-logo">
-                                <div class="commentator-name">Ваган Сысоев</div>
+                            <div class="img-wrapping">
+                                <img src="./src/commentators/5.jpg" onclick="choseComment(this)" id="com1" alt="logo5" class="commentator-logo">
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="comment-text">
-                                Этого человека просто невозможно не любить! 
-                                Этого человека просто невозможно не любить!
-                                Этого человека просто невозможно не любить!
-                                Этого человека просто невозможно не любить!
-                                Этого человека просто невозможно не любить!
-                                Этого человека просто невозможно не любить!
+                            <div class="img-wrapping">
+                                <img src="./src/commentators/4.jpg" onclick="choseComment(this)" id="com2" alt="logo4" class="commentator-logo">
+                            </div>
+                            <div class="img-wrapping">
+                                <img src="./src/commentators/3.jpg" onclick="choseComment(this)" id="com3" alt="logo3" class="commentator-logo">
                             </div>
                         </div>
-                        <div class="comment-elem">
-                            <div class="comment-info">
-                                <img src="./src/commentators/5.jpg" alt="logo5" class="commentator-logo">
-                                <div class="commentator-name">Агент Поддержки #334</div>
+                        <div class="comment-space comments">
+                            <div class="comment shown-comment" id="com0-text">
+                                <div class="comment commentator-name">Антон Бобруев</div>
+                                <div class="comment content-text">
+                                    Восхитительный художник! Безупречный гранат! Изумительный арбуз! Водородный шлакобряк!
+                                 </div>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="comment-text">
-                                Бррррр, бррррррррр-ррррррррр! Что я здесь делаю? Кто эти клоуны?
+                            <div class="comment hidden-comment" id="com1-text">
+                                <div class="comment commentator-name">Агент Поддержки #334</div>
+                                <div class="comment content-text">
+                                    Бррррр, бррррррррр-ррррррррр! Что я здесь делаю? Кто эти клоуны?
+                                </div>
+                            </div>
+                            <div class="comment hidden-comment" id="com2-text">
+                                <div class="comment commentator-name">Ваган Сысоев</div>
+                                <div class="comment content-text">
+                                    Этого человека просто невозможно не любить! 
+                                    Этого человека просто невозможно не любить!
+                                    Этого человека просто невозможно не любить!
+                                    Этого человека просто невозможно не любить!
+                                    Этого человека просто невозможно не любить!
+                                    Этого человека просто невозможно не любить!
+                                </div>
+                            </div>
+                            <div class="comment hidden-comment" id="com3-text">
+                                <div class="comment commentator-name">Детектив Шныревадзе</div>
+                                <div class="comment content-text">
+                                    По правде говоря, я сильно обеспокоен нынешним
+                                    положением дел. Молодёжь отравляет себя всем,
+                                    что только может попасться им под руку. Взрослые
+                                    закрывают глаза на мир, на воспитание своих детей,
+                                    на любые проблемы, с которыми сталкиваются.
+                                    Современный человек бежит от любой трудности,
+                                    которая встанет на его пути. Он бежит, даже если
+                                    приходится забросить все свои мечты и желания.
+                                    Люди стали слишком слабыми, и вместо того,
+                                    чтобы признать, что они опустили руки и отказались
+                                    сопротивляться, они неистово верещат о том, как жесток
+                                    наш мир. Но самое страшное - это то, что люди 
+                                    боятся встретиться лицом к лицу со своим
+                                    истинным нутром. Они не готовы меняться в 
+                                    лучшую сторону, но бояться это признать. 
+                                    Они хотят стать лучше, но они не готовы 
+                                    прикладывать усилия. Поэтому, они притворяются,
+                                    будто та жизнь, которую они живут - равзратная,
+                                    грязная, отвратительная и безобразная - это 
+                                    несерьёзно. Они относятся к этому, как к 
+                                    некоторой шутке, дабы смягчить взгляд окружающих
+                                    на происходящее.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="comment-form">
-                        <div class="suggest">Поделитесь своим мнением!</div>
-                        <textarea class="comment-form name" placeholder="Ага"></textarea>
-                        <textarea class="comment-form text" placeholder="Будто бы оно кому-то важно"></textarea>
-                        <button id="send-comment">Есть пробитие!</button>
-                    </div>
+                    <script>
+                        function choseComment(com) {
+                            let shown = document.getElementsByClassName("shown-comment");
+                            for (let elem of shown) {
+                                elem.classList.remove("shown-comment");
+                                elem.classList.add("hidden-comment");   
+                            };
+                            let hidden = document.getElementById(com.id+"-text");
+                            hidden.classList.remove("hidden-comment");
+                            hidden.classList.add("shown-comment");
+
+                            let chosen = document.getElementsByClassName("chosen-commentator");
+                            for (let elem of chosen) {
+                                elem.classList.remove("chosen-commentator");
+                            }
+                            com.classList.add("chosen-commentator");
+                        }
+                    </script>
                     <div class="undercover">
                         <div class="undercover-text">
                             Не позволяй твоему языку опережать твою мысль
@@ -230,41 +280,43 @@
         </main>
     
         
-        <div id="form">
+        <div id="form" class="hidden wrapped bounded">
             <div class="form-flex">
-                <div class="form-flex-element form-flex-header">Напишите мне!</div>
+                <div class="form-flex-element header">Напишите мне!</div>
                 <div class="form-flex-element">Ваша почта:</div>
                 <textarea class="form-flex-element" placeholder="example@example.example" id="mail"></textarea>
                 <div class="form-flex-element">Что Вам нужно от меня?</div>
                 <textarea class="form-flex-element" placeholder="НАПИШИ ЧТО-НИБУДЬ, ПОЖАЛУЙСТА" id="text"></textarea>
                 <div class="form-flex-element form-flex-buttons">
-                    <button id="form-send" class="form-flex-button">Отправить</button>
-                    <button id="form-close" class="form-flex-button">Закрыть</button>
+                    <button id="form-send" class="form-flex-btn wrapped">Отправить</button>
+                    <button id="form-close" class="form-flex-btn wrapped">Закрыть</button>
                 </div>
             </div>
         </div>
-        <button id="form-open" class="fixed">Жамкни меня!</button>
+        <button id="form-open" class="bounded wrapped">Жмакни меня!</button>
         <script>
             let form = document.getElementById("form");
             let showButton = document.getElementById("form-open");
             let closeButton = document.getElementById("form-close");
-        
+
             showButton.onclick = function() {
-                if (form.style.display != "block") {
-                    form.style.display = "block";
+                if (form.classList.contains("hidden")) {
+                    form.classList.remove("hidden");
+                    form.classList.add("shown");
                 } else {
-                    form.style.display = "none";
+                    form.classList.remove("shown");
+                    form.classList.add("hidden");
                 }
             };
             closeButton.onclick = function() {
-                form.style.display = "none";
+                form.classList.remove("shown");
+                form.classList.add("hidden");
             };
         </script>
        
-        <button onclick="topFunction()" id="go-top" class="fixed">Наверх!</button>
+        <button onclick="topFunction()" id="go-top" class="bounded wrapped">Наверх!</button>
         <script>
             window.onscroll = function() {scrollFunction()};
-
             function scrollFunction() {
                 if (document.documentElement.scrollTop > 200) {
                     document.getElementById("go-top").style.display = "block";
@@ -272,23 +324,16 @@
                     document.getElementById("go-top").style.display = "none";
                 }
             }
-            
             function topFunction() {
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                document.documentElement.scrollTop = 0;
             }
         </script>
 
         <footer>
             <div class="footer-wrapper">
-                being gay is strictly prohibited in this country
+                Создано при поддержке Яндекс.Музыки и паблика Вконтакте "а сейчас" 
             </div>
         </footer>
     </div>
-
-    
-    <script src="./lightgallery/lightgallery.js"></script>
-    <script>
-        lightGallery(document.getElementById("lightgallery"));
-    </script>
 </body>
 </html>

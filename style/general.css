@@ -3,20 +3,6 @@
     --min-width: 800px;
 }
 
-h1 {
-    margin: auto;
-    text-align: center;
-
-    font-size: 600%;
-    font-style: italic;
-    font-weight: 900;
-}
-h4 {
-    margin: 0;
-    font-size: 400%;
-    width: max-content;
-}
-
 div.clearfix {
     clear: both;
 }
@@ -30,7 +16,7 @@ body {
 }
 div.page {
     font-family: Roboto, serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     min-width: var(--min-width);
     margin: auto;
@@ -44,5 +30,56 @@ main {
     background-color:#2a2c2f;
     border-top: solid #F9F9F9 1px;
 }
+.main-wrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+div.section {
+    padding: 48px 0;
+}
+div.content-text {
+    line-height: 180%;
+    padding: 8px 16px;
+}
+div.undercover {
+    width: 50%;
+    border-bottom: solid #F9F9F9 1px;
+    margin: 0 auto;
+}
+div.undercover-text {
+    width: max-content;
+    margin: auto;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 200;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+.bounded {
+    position: fixed;
+    z-index: 99;
+}
 
 
+h1 {
+    margin: auto;
+    text-align: center;
+
+    font-size: 600%;
+    font-style: italic;
+    font-weight: 600;
+
+    border-bottom: solid #F9F9F9 1px;
+}
+h4 {
+    margin: 0;
+    font-size: 400%;
+    width: max-content;
+    font-weight: 500;
+}

@@ -1,0 +1,14 @@
+.wrapped {
+    font-family: inherit;
+    font-size: inherit;
+    color: #F9F9F9;
+    font-weight: 300;
+
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 8px;
+
+    width: max-content;
+    height: max-content;
+}
