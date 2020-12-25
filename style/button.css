@@ -1,0 +1,27 @@
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: #F9F9F9;
+    font-weight: 600;
+
+    border: solid #F9F9F9 1px;
+    border-radius: 0;
+
+    margin: 0;
+    padding: 8px;
+
+    background-color: #2a2c2f;
+    width: max-content;
+    height: max-content;
+
+    outline: none;
+	cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+}
+
+button.fixed {
+    position: fixed;
+    z-index: 99;
+}

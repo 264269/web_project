@@ -1,0 +1,11 @@
+
+footer {
+    width: 100%;
+    border-top: solid #F9F9F9 1px;
+}
+.footer-wrapper {
+    width: max-content;
+    margin: auto;
+    color: #f9f9f9;
+    font-size: 6px;
+}

@@ -3,6 +3,20 @@
     --min-width: 800px;
 }
 
+h1 {
+    margin: auto;
+    text-align: center;
+
+    font-size: 600%;
+    font-style: italic;
+    font-weight: 900;
+}
+h4 {
+    margin: 0;
+    font-size: 400%;
+    width: max-content;
+}
+
 div.clearfix {
     clear: both;
 }
@@ -30,4 +44,5 @@ main {
     background-color:#2a2c2f;
     border-top: solid #F9F9F9 1px;
 }
+
 

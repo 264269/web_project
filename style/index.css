@@ -1,0 +1,143 @@
+.main-wrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.section {
+    padding: 48px 0;
+}
+div.content-text {
+    line-height: 163%;
+}
+
+div.undercover {
+    width: 50%;
+    border-top: solid #F9F9F9 1px;
+    margin: 20px auto 0;
+}
+div.undercover-text {
+    width: max-content;
+    margin: auto;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h4.portrait {
+    margin: 0 5% 10px auto;
+}
+img.portrait {
+    float: left;
+    border: solid  #F9F9F9 2px;
+    margin-right: 24px;
+    width: 35%;
+    height: auto;
+}
+div.portrait.content-text {
+    text-indent: 10%;
+}
+
+button#form-open {
+    bottom: 24px;
+    right: 24px;
+}
+button#go-top {
+    display: none;
+
+    top: calc(24px + var(--header-height));
+    right: 24px; 
+}
+
+div#form {
+    display: none;
+
+    position: fixed;
+    bottom: 61px;
+    right: 24px;
+    z-index: 99;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: #F9F9F9;
+    font-weight: 600;
+
+    border: solid #F9F9F9 2px;
+    border-radius: 0;
+
+    margin: 0;
+    padding: 4px;
+
+    background-color: #2a2c2f;
+    width: max-content;
+    height: max-content;
+}
+
+div.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+.form-flex-header {
+    align-self: center;
+}
+div.form-flex-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4px 4px;
+}
+.form-flex-element {
+    padding: 4px;
+    margin: 4px 8px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+div.promo-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 25px;
+}
+div.promo-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px;
+    border: solid #f9f9f9 1px;
+    padding: 0 8px;
+}
+div.item-thumb {
+    align-self: center;
+    padding: 4px;
+    margin: 4px;
+    width: max-content;
+    height: max-content;
+}
+img.item-thumb {
+    width: 200px;
+    height: auto;
+}
+div.item-name {
+    align-self: center;
+    font-size: 120%;
+    font-weight: 700;
+    padding: 2px 0;
+}
+div.item-price {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 4px;
+}
+span.old-price {
+    text-decoration: line-through;
+}
+span.new-price {
+    font-weight: 600;
+}
