@@ -43,9 +43,6 @@ img.photo-grid-item:hover {
 
 
 /* Главное */
-h4.about {
-    margin: 0 auto 10px 5%;
-}
 div.about.section-content {
     display: flex;
 }
@@ -76,9 +73,6 @@ div.about.section-content .not-img a:hover {
 
 
 /* Фотосессия */
-h4.portrait {
-    margin: 0 5% 10px auto;
-}
 div.portrait.section-content {
     display: flex;
     flex-direction: row-reverse;
@@ -110,9 +104,6 @@ div.portrait.section-content .not-img a:hover {
 
 
 /* Отзывы */
-h4.comments {
-    margin: 0 auto 10px 5%;
-}
 div.comments.section-content {
     display: flex;
     flex-direction: column;

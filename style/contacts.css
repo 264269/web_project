@@ -2,10 +2,6 @@
 body {
     overflow: scroll;
 }
-h4.map {
-    margin: 0 auto 10px 5%;
-    text-align: left;
-}
 div.map.content {
     height: 30vh;
     min-height: 200px;

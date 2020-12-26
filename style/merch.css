@@ -1,8 +1,5 @@
 
 /* Прайс-лист */
-h4.price-list {
-    margin: 0 auto 10px 5%;
-}
 div.price-list {
     width: 100%;
     display: flex;
@@ -74,10 +71,6 @@ button.buy-button:hover {
 }
 
 /* Истории */
-h4.stories {
-    margin: 0 5% 10px auto;
-    text-align: right;
-}
 div.stories.content {
     display: flex;
     flex-direction: row;
