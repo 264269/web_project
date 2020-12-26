@@ -29,7 +29,12 @@ img.photo-grid-item {
     width: 15vw;
     min-width: calc((var(--min-width) * 0.75 - 16px * 3) / 4);
     height: auto;
+    transition: 0.5s;
 }
+img.photo-grid-item:hover {
+    transform: scale(1.5);
+}
+
 
 
 /* Главное */
@@ -164,90 +169,3 @@ div.comment.content-text {
     font-style: italic;
     overflow: auto;
 }
-
-
-/* Кнопки */
-button {
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-
-/* Фиксированные кнопки */
-button#go-top {
-    display: none;
-
-    top: calc(24px + var(--header-height));
-    right: 24px; 
-}
-button#form-open {
-    bottom: 24px;
-    right: 24px;
-}
-button.bounded {
-    background-color: rgba(72, 74, 77, 0.7);
-}
-button.bounded:hover {
-    background-color: gray;
-}
-
-
-/* Форма */
-div#form {
-    bottom: 66px;
-    right: 24px;
-    min-width: 250px;
-    background-color: rgba(27, 29, 32, 0.8);
-}
-div.form-flex {
-    display: flex;
-    flex-direction: column;
-}
-.form-flex-element.header {
-    align-self: center;
-}
-.form-flex-element {
-    margin: 4px 8px;
-}
-div.form-flex-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-button.form-flex-btn {
-    background-color: rgb(72, 74, 77);
-}
-button.form-flex-btn:hover {
-    background-color: gray;
-}
-
-
-/* Стиль окошка ввода */
-textarea {
-    resize: none;
-    outline: none;
-    font-family: inherit;
-}
-
-
-/* Скроллбар */
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #484a4d; 
-    -webkit-box-shadow: inset 0 0 6px #000000; 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: #484a4d; 
-}
-
-

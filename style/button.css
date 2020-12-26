@@ -6,3 +6,59 @@ button {
 button:hover {
     background-color: gray;
 }
+
+/* Кнопки */
+button {
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Фиксированные кнопки */
+button#go-top {
+    display: none;
+
+    top: calc(24px + var(--header-height));
+    right: 24px; 
+}
+button#form-open {
+    bottom: 24px;
+    right: 24px;
+}
+button.bounded {
+    background-color: rgba(72, 74, 77, 0.7);
+}
+button.bounded:hover {
+    background-color: gray;
+}
+
+
+/* Форма */
+div#form {
+    bottom: 66px;
+    right: 24px;
+    min-width: 250px;
+    background-color: rgba(27, 29, 32, 0.8);
+}
+div.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+.form-flex-element.header {
+    align-self: center;
+}
+.form-flex-element {
+    margin: 4px 8px;
+}
+div.form-flex-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button.form-flex-btn {
+    background-color: rgb(72, 74, 77);
+}
+button.form-flex-btn:hover {
+    background-color: gray;
+}

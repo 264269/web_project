@@ -83,3 +83,11 @@ h4 {
     width: max-content;
     font-weight: 500;
 }
+
+
+/* Стиль окошка ввода */
+textarea {
+    resize: none;
+    outline: none;
+    font-family: inherit;
+}
