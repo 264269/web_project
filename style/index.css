@@ -231,48 +231,23 @@ textarea {
 }
 
 
-/* Акция */
-/* div.promo-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow-x: auto;
-    padding-bottom: 25px;
+/* Скроллбар */
+::-webkit-scrollbar {
+    width: 12px;
 }
-div.promo-item {
-    display: flex;
-    flex-direction: column;
-    margin: 0 8px;
-    border: solid #f9f9f9 1px;
-    padding: 0 8px;
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
-div.item-thumb {
-    align-self: center;
-    padding: 4px;
-    margin: 4px;
-    width: max-content;
-    height: max-content;
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #484a4d; 
+    -webkit-box-shadow: inset 0 0 6px #000000; 
 }
-img.item-thumb {
-    width: 200px;
-    height: auto;
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #484a4d; 
 }
-div.item-name {
-    align-self: center;
-    font-size: 120%;
-    font-weight: 700;
-    padding: 2px 0;
-}
-div.item-price {
-    align-self: center;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    padding-bottom: 4px;
-}
-span.old-price {
-    text-decoration: line-through;
-}
-span.new-price {
-    font-weight: 600;
-} */
+
+

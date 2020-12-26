@@ -1,0 +1,45 @@
+/* Акция */
+/* div.promo-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 25px;
+}
+div.promo-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px;
+    border: solid #f9f9f9 1px;
+    padding: 0 8px;
+}
+div.item-thumb {
+    align-self: center;
+    padding: 4px;
+    margin: 4px;
+    width: max-content;
+    height: max-content;
+}
+img.item-thumb {
+    width: 200px;
+    height: auto;
+}
+div.item-name {
+    align-self: center;
+    font-size: 120%;
+    font-weight: 700;
+    padding: 2px 0;
+}
+div.item-price {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 4px;
+}
+span.old-price {
+    text-decoration: line-through;
+}
+span.new-price {
+    font-weight: 600;
+} */
