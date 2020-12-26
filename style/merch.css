@@ -8,86 +8,109 @@ div.price-list {
     display: flex;
     flex-direction: column;
 }
-
 div.price-list-item {
+    height: 15vh;
+    min-height: 200px;
+    margin: 20px 0;
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    margin: 20px 0;
     border-bottom: 1px solid #f9f9f9;
     border-top: 1px solid #f9f9f9;
     background-color: rgb(72, 74, 77);
-    justify-content: left;
-    /* border-radius: 25px;
-    padding: 20px;
-    margin: 20px;
-    border: 5px solid #e6e6e6;
-    background-color: rgb(72, 74, 77);
-
-    justify-content: left; */
 }
-
-div.image {
-    margin: 20px;
-
-    width: 20%;
+.prod-item {
+    height: 100%;
 }
-
-div.item-title {
-    display: flex;
-    align-self: flex-start;
-
-    width: 50%;
-
-    margin: 20px;
-}
-
-div.price {
-    display: flex;
-    justify-content: right;
-    align-self: flex-end;
-
-    width: 20%;
-
-    margin: 20px;
-}
-
-div.btn {
-    display: flex;
-    align-self: flex-end;
-
-    width: 10%;
-
-    margin: 20px;
-    padding: 5px;
-
-    font-size: 18px;
-
-    border: 2px solid #e6e6e6;
-}
-
-div.btn:hover {
-    background-color: gray;
-}
-
 img.merch-image {
-    width: 15vw;
-    min-width: 128px;
-    height: auto;
-
-    border-radius: 5px;
-    transition: 1s;
+    margin-right: 2.5%;
+    transition: 0.5s;
 }
-
 img.merch-image:hover {
     transform: scale(1.2);
 }
+div.not-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2.5%;
+    width: 100%;
+}
+div.prod-info {
+    display: flex;
+    flex-direction: column;
 
-button.buy:hover {
+    min-width: 110px;
+    max-width: 70%;
+}
+div.description {
+    padding: 0 0 5px 0;
+    overflow: auto;
+}
+div.buy {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 5%;
+}
+h2.price {
+    align-self: flex-end;
+    text-align: right;
+}
+button.buy-button {
+    align-self: flex-end;
+    background-color: rgb(27, 29, 32);
+    margin-bottom: 20px;
+}
+button.buy-button:hover {
     background-color: gray;
 }
 
-button.buy {
-    background-color: #e6e6e6;
+/* Истории */
+h4.stories {
+    margin: 0 5% 10px auto;
+    text-align: right;
 }
+div.stories.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.story.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    margin: 16px 4px;
+    height: 650px;
+    width: 350px;
+
+    background-color: rgb(72, 74, 77);
+    border-top: 1px #f9f9f9 solid;
+    border-bottom: 1px #f9f9f9 solid;   
+}
+div.story.header {
+    align-self: center;
+    font-size: 250%;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px 0;
+    height: 20%;
+}
+img.story {
+    align-self: center;
+    width: 80%;
+}
+div.story.text {
+    align-self: center;
+    width: 80%;
+    padding: 16px 8px 16px;
+    text-align: center;
+    overflow: auto;
+    height: 10%;
+}

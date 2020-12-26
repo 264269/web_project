@@ -2,6 +2,7 @@ button {
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    background-color: rgba(72, 74, 77, 0.7);
 }
 button:hover {
     background-color: gray;
@@ -27,7 +28,7 @@ button#form-open {
     right: 24px;
 }
 button.bounded {
-    background-color: rgba(72, 74, 77, 0.7);
+    background-color: rgba(102, 104, 107, 0.7);
 }
 button.bounded:hover {
     background-color: gray;
@@ -57,7 +58,7 @@ div.form-flex-buttons {
     justify-content: space-between;
 }
 button.form-flex-btn {
-    background-color: rgb(72, 74, 77);
+    background-color: rgb(102, 104, 107);
 }
 button.form-flex-btn:hover {
     background-color: gray;

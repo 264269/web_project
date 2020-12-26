@@ -20,6 +20,7 @@ div.page {
     font-size: 16px;
     min-width: var(--min-width);
     margin: auto;
+    word-wrap: break-word;
 }
 
 main {
@@ -28,7 +29,6 @@ main {
     
     color: #F9F9F9;
     background-color:#2a2c2f;
-    border-top: solid #F9F9F9 1px;
 }
 .main-wrapper {
     width: 75%;
@@ -80,7 +80,6 @@ h1 {
 h4 {
     margin: 0;
     font-size: 400%;
-    width: max-content;
     font-weight: 500;
 }
 

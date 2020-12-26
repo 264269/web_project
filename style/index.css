@@ -1,3 +1,8 @@
+/* Окантовочка */
+main {
+    border-top: solid #F9F9F9 1px;
+}
+
 /* Секция и контент секции */
 div.section {
     padding: 0;
