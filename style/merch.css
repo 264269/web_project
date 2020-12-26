@@ -20,6 +20,10 @@ div.price-list-item {
     border-bottom: 1px solid #f9f9f9;
     border-top: 1px solid #f9f9f9;
     background-color: rgb(72, 74, 77);
+    transition: 0.3s;
+}
+div.price-list-item:hover {
+    background-color: rgb(102, 104, 107);
 }
 .prod-item {
     height: 100%;
@@ -91,7 +95,9 @@ div.story.container {
 
     background-color: rgb(72, 74, 77);
     border-top: 1px #f9f9f9 solid;
-    border-bottom: 1px #f9f9f9 solid;   
+    border-bottom: 1px #f9f9f9 solid;  
+
+    transition: background-color 0.3s;
 }
 div.story.header {
     align-self: center;

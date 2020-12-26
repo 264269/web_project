@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Лучший в мире стример</title>
-    <link rel="stylesheet" href="./style/contacts.css">
+
     <link rel="stylesheet" href="./style/fonts.css">
-    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/general.css">
-    <meta name="keywords" content="генерал, хс, general, hs, general_hs, стример, лысый">
-    <meta name="description" content="Это не шутка!">
-</head>
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/scrollbar.css">
+    <link rel="stylesheet" href="./style/wrapped.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/contacts.css">
+    <link rel="stylesheet" href="./style/footer.css">
+
+    <title>Виктор Конокрад, фотограф, Санкт-Петербург</title>
+    <meta name="keywords" content="фотограф, фотография, photo, Виктор, Конокрад, Санкт-Петербург, ламповый">
+    <meta name="description" content="Заходите на чай с полароидом!">
 
 <body>
     <div class="page">
@@ -37,25 +42,88 @@
                 </div>
             </div>
         </header>
-
-        <div class="welcome">
-                <img src="./src/welcome.jpg" alt="welcome" class="welcome-img">
-        </div>
         
         <main>
             <div class="main-wrapper">
                 <div class="section introduction">
-                    <div class="content">
-                        <h1>
-                            Вас приветствует лысейший из лысейших!
-                        </h1>
+                    <h1>
+                        Контакты, и тому подобное
+                    </h1>
+                </div>
+                <div class="section map">
+                    <h4 class="map header">Карта</h4>
+                    <div class="map content">
+                        <img src="./src/contacts/map-mini.jpg" alt="" class="actual map">
+                        <div class="map not-img">
+                            <div class="map text">
+                                Обнаружить меня Вы можете по адресу г. Красноярск, ул. Тельмана, 10.
+                                Там находится моя жилая квартира и, по совместительству, мой рабочий офис. 
+                            </div>
+                            <div class="map contacts">
+                                <div class="contact-item header">Связь со мной:</div>
+                                <div class="contact-item"><a href="https://vk.com/unvalued">ВКонтакте</a></div>
+                                <div class="contact-item">+7(904)635-14-24</div>
+                                <div class="contact-item">999all@mail.ru</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
     
-        
+        <div id="form" class="hidden wrapped bounded">
+            <div class="form-flex">
+                <div class="form-flex-element header">Напишите мне!</div>
+                <div class="form-flex-element">Ваша почта:</div>
+                <textarea class="form-flex-element" placeholder="example@example.example" id="mail"></textarea>
+                <div class="form-flex-element">Что Вам нужно от меня?</div>
+                <textarea class="form-flex-element" placeholder="НАПИШИ ЧТО-НИБУДЬ, ПОЖАЛУЙСТА" id="text"></textarea>
+                <div class="form-flex-element form-flex-buttons">
+                    <button id="form-send" onclick="alert('Ахаха повёлся не пиши мне никогда в жизни чел')" class="form-flex-btn wrapped">Отправить</button>
+                    <button id="form-close" class="form-flex-btn wrapped">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <button id="form-open" class="bounded wrapped">Жмакни меня!</button>
+        <script>
+            let form = document.getElementById("form");
+            let showButton = document.getElementById("form-open");
+            let closeButton = document.getElementById("form-close");
+    
+            showButton.onclick = function() {
+                if (form.classList.contains("hidden")) {
+                    form.classList.remove("hidden");
+                    form.classList.add("shown");
+                } else {
+                    form.classList.remove("shown");
+                    form.classList.add("hidden");
+                }
+            };
+            closeButton.onclick = function() {
+                form.classList.remove("shown");
+                form.classList.add("hidden");
+            };
+        </script>
+       
+        <button onclick="topFunction()" id="go-top" class="bounded wrapped">Наверх!</button>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.documentElement.scrollTop > 200) {
+                    document.getElementById("go-top").style.display = "block";
+                } else {
+                    document.getElementById("go-top").style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <footer>
+            <div class="footer-wrapper">
+                Создано при поддержке Яндекс.Музыки и паблика Вконтакте "а сейчас" 
+            </div>
         </footer>
     </div>
 </body>
